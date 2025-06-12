@@ -1,75 +1,141 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trang Khoa Học</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
-</head>
-<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Liên Minh Huyền Thoại - League of Legends</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0f0f0f;
+      color: #f1f1f1;
+      margin: 0;
+      padding: 0;
+    }
 
-  <!-- Header -->
-  <header class="bg-blue-900 text-white py-6 shadow-md">
-    <div class="max-w-5xl mx-auto px-4">
-      <h1 class="text-3xl font-bold">Page này để dành cho thằng Nhữ Công Tuấn anh</h1>
-      <p class="text-sm text-blue-200">Đánh liên minh thì ngu, blame đồng đội thì nhanh</p>
-    </div>
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      color: #eabe3f;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 30px;
+    }
+
+    .game-img {
+      width: 100%;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    h2 {
+      color: #f39c12;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    a.btn {
+      display: inline-block;
+      background-color: #eabe3f;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    a.btn:hover {
+      background-color: #d1a733;
+    }
+
+    .champions {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .champion-card {
+      background-color: #1c1c1c;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .champion-card img {
+      width: 100%;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Liên Minh Huyền Thoại</h1>
+    <p>Trò chơi MOBA đình đám toàn cầu</p>
   </header>
 
-  <!-- Nội dung chính -->
-  <main class="max-w-5xl mx-auto px-4 py-10">
-    
-    <!-- Giới thiệu -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2">Giới thiệu</h2>
-      <p>
-        Lần sau mày đừng có pick con Cassopia nữa. nhìn đần lắm
-      </p>
-    </section>
+  <div class="container">
+    <img class="game-img" src="https://cdn.cloudflare.steamstatic.com/steam/apps/1234040/header.jpg?t=1685707962" alt="Liên Minh Huyền Thoại">
 
-    <!-- Dự án tiêu biểu -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Dự án tiêu biểu</h2>
-      <ul class="space-y-2 list-disc list-inside">
-        <li>Nghiên cứu các con tướng khác đi (2024–2025)</li>
-        <li>Ứng dụng cái não mày vào thực tế</li>
-        <li>Phát triển nền tảng tư duy check map nhé</li>
-      </ul>
-    </section>
+    <h2>Giới thiệu</h2>
+    <p>
+      <strong>Liên Minh Huyền Thoại</strong> (League of Legends) là một trò chơi chiến thuật đấu trường trực tuyến nhiều người chơi (MOBA) do Riot Games phát triển. Người chơi điều khiển một "tướng" (champion) với bộ kỹ năng riêng biệt, phối hợp cùng đồng đội để phá huỷ nhà chính của đối phương.
+    </p>
 
-    <!-- Thành viên -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-4">Thành viên chủ chốt</h2>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div class="bg-white p-4 rounded-lg shadow">
-          <h3 class="font-bold">TS. Nguyễn Văn Bình</h3>
-          <p class="text-sm text-gray-600">Chuyên gia gánh team</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow">
-          <h3 class="font-bold">PGS. TS. Trần Thị B</h3>
-          <p class="text-sm text-gray-600">Vật liệu mới & ứng dụng</p>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow">
-          <h3 class="font-bold">ThS. Lê Văn C</h3>
-          <p class="text-sm text-gray-600">Sinh học phân tử</p>
-        </div>
+    <h2>Đặc điểm nổi bật</h2>
+    <ul>
+      <li>Hơn 160 tướng với phong cách chơi đa dạng</li>
+      <li>Cập nhật liên tục và cân bằng game tốt</li>
+      <li>Đấu xếp hạng cạnh tranh khốc liệt</li>
+      <li>Cộng đồng esports sôi động toàn cầu</li>
+    </ul>
+
+    <h2>Một số tướng nổi bật</h2>
+    <div class="champions">
+      <div class="champion-card">
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Yasuo_0.jpg" alt="Yasuo">
+        <p>Yasuo - Kẻ Bất Dung Thứ</p>
       </div>
-    </section>
+      <div class="champion-card">
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="Ahri">
+        <p>Ahri - Hồ Ly Chín Đuôi</p>
+      </div>
+      <div class="champion-card">
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="Jinx">
+        <p>Jinx - Khẩu Pháo Nổi Loạn</p>
+      </div>
+      <div class="champion-card">
+        <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg" alt="Zed">
+        <p>Zed - Chúa Tể Bóng Tối</p>
+      </div>
+    </div>
 
-    <!-- Liên hệ -->
-    <section class="mb-10">
-      <h2 class="text-2xl font-semibold mb-2">Liên hệ</h2>
-      <p>Email: <a href="mailto:info@khoahoc.vn" class="text-blue-600 hover:underline">info@khoahoc.vn</a></p>
-      <p>Địa chỉ: 123 Đường Khoa học, Quận Tri Thức, TP. Hà Nội</p>
-    </section>
+    <a class="btn" href="https://www.leagueoflegends.com/vi-vn/" target="_blank">Truy cập trang chính thức</a>
+  </div>
 
-  </main>
-
-  <!-- Footer -->
-  <footer class="bg-gray-200 text-center text-sm text-gray-700 py-4">
-    © 2025 Trung tâm Nghiên cứu Khoa học & Công nghệ. All rights reserved.
+  <footer>
+    &copy; 2025 Trang thông tin Liên Minh Huyền Thoại | Phiên bản người hâm mộ
   </footer>
 
 </body>
 </html>
-
