@@ -1,14 +1,75 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Trang Web Của Tôi</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Khoa Học</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
 </head>
-<body class="bg-gray-100 text-gray-800">
-  <div class="max-w-3xl mx-auto p-6 mt-10 bg-white rounded-xl shadow-xl">
-    <h1 class="text-3xl font-bold mb-4">Xin chào! 👋</h1>
-    <p class="text-lg">Đây là trang web của tôi được host trên GitHub Pages.</p>
-  </div>
+<body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
+
+  <!-- Header -->
+  <header class="bg-blue-900 text-white py-6 shadow-md">
+    <div class="max-w-5xl mx-auto px-4">
+      <h1 class="text-3xl font-bold">Trung tâm Nghiên cứu Khoa học & Công nghệ</h1>
+      <p class="text-sm text-blue-200">Chia sẻ tri thức – Định hình tương lai</p>
+    </div>
+  </header>
+
+  <!-- Nội dung chính -->
+  <main class="max-w-5xl mx-auto px-4 py-10">
+    
+    <!-- Giới thiệu -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Giới thiệu</h2>
+      <p>
+        Trung tâm chuyên nghiên cứu và phát triển các lĩnh vực liên quan đến khoa học dữ liệu, trí tuệ nhân tạo, vật liệu mới và môi trường. Với đội ngũ nghiên cứu viên chuyên nghiệp, chúng tôi hướng đến các giải pháp khoa học ứng dụng thực tiễn.
+      </p>
+    </section>
+
+    <!-- Dự án tiêu biểu -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">Dự án tiêu biểu</h2>
+      <ul class="space-y-2 list-disc list-inside">
+        <li>Nghiên cứu vật liệu cách nhiệt thông minh (2024–2025)</li>
+        <li>Ứng dụng học máy trong dự báo lũ lụt miền Trung</li>
+        <li>Phát triển nền tảng truy vết sinh học bằng AI</li>
+      </ul>
+    </section>
+
+    <!-- Thành viên -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-4">Thành viên chủ chốt</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-bold">TS. Nguyễn Văn A</h3>
+          <p class="text-sm text-gray-600">Chuyên gia AI & Dữ liệu lớn</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-bold">PGS. TS. Trần Thị B</h3>
+          <p class="text-sm text-gray-600">Vật liệu mới & ứng dụng</p>
+        </div>
+        <div class="bg-white p-4 rounded-lg shadow">
+          <h3 class="font-bold">ThS. Lê Văn C</h3>
+          <p class="text-sm text-gray-600">Sinh học phân tử</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Liên hệ -->
+    <section class="mb-10">
+      <h2 class="text-2xl font-semibold mb-2">Liên hệ</h2>
+      <p>Email: <a href="mailto:info@khoahoc.vn" class="text-blue-600 hover:underline">info@khoahoc.vn</a></p>
+      <p>Địa chỉ: 123 Đường Khoa học, Quận Tri Thức, TP. Hà Nội</p>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-200 text-center text-sm text-gray-700 py-4">
+    © 2025 Trung tâm Nghiên cứu Khoa học & Công nghệ. All rights reserved.
+  </footer>
+
 </body>
 </html>
+
